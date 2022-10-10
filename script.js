@@ -26,6 +26,8 @@ var x=function(a,b){
 var suma=x(1,2)
 console.log(suma)
 console.log(x(1,2))
+//
+
 function Paises() {
     var result = ''; 
     var i;
@@ -35,11 +37,14 @@ function Paises() {
     return result;
  }
  alert(Paises('Bolivia', 'Ecuador', 'Francia', 'Brasil'));
- 
+// 
+
 function v(){
     alert(arguments.length)
 }
 v("12","sdjasjd","dfjdjfdjf","jsdjsdf")
+//
+
 var producto={
     //atributos
     codigo: 5,
@@ -52,4 +57,21 @@ var producto={
 }
 this.producto.incremento(500);
 alert(this.producto.precio);
+//
 
+function changeColor(newColor){
+    var elem=document.getElementById('jeje');
+    elem.style.backgroundColor=newColor;
+}
+function cambiar(){
+    document.getElementById("cambio").innerHTML="te cambie el texto gil"
+}
+function myFunction() {
+    var x = document.getElementById('uno').innerHTML;
+    document.getElementById('dos').innerHTML = x;
+  }
+function mifuncion() {
+    document.getElementById("sitio").innerHTML = "UNAB";
+    document.getElementById("sitio").href = "https://www.unab.edu.co";
+    document.getElementById("sitio").target = "_blank";
+}
